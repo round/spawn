@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>spawn.js</title>
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+		<script src='spawn.js'></script>
+		<style>
+			header {background: red;}
+			main {background: green;}
+			footer {background: blue;}
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<strong>Header Content:</strong>
+			<script>spawn('partials.html #header');</script>
+		</header>
+
+		<main>
+			<strong>Main Content:</strong>
+			<script>spawn('partials.html #main');</script>
+		</main>
+
+		<footer>
+			<strong>Footer Content:</strong>
+			<script>spawn('partials.html #footer');</script>
+		</footer>
+	</body>
+</html>
